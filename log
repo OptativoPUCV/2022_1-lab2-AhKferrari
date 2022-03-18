@@ -25,3 +25,14 @@ list.c:33:10: error: unused variable ‘new’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 275f154
+Fri Mar 18 14:25:02 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:33:10: error: unused variable ‘nueva’ [-Werror=unused-variable]
+   List * nueva = (List *)malloc(sizeof(List));
+          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5691075

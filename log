@@ -106,3 +106,30 @@ list.c:42:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 1921080
+Fri Mar 18 14:41:58 UTC 2022: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:33:8: error: statement with no effect [-Werror=unused-value]
+   nueva->head;
+   ~~~~~^~~~~~
+list.c:34:8: error: statement with no effect [-Werror=unused-value]
+   nueva->current;
+   ~~~~~^~~~~~~~~
+list.c:35:8: error: statement with no effect [-Werror=unused-value]
+   nueva->tail;
+   ~~~~~^~~~~~
+list.c: In function ‘firstList’:
+list.c:40:7: error: ‘List {aka struct List}’ has no member named ‘nueva’
+   list->nueva->head;
+       ^~
+list.c:41:15: error: ‘List {aka struct List}’ has no member named ‘nueva’
+    return list->nueva->head;
+               ^~
+list.c:42:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+1a2c503

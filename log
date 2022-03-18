@@ -1,0 +1,16 @@
+Fri Mar 18 14:24:09 UTC 2022: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:33:38: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   List * new = (List *)malloc(sizeof(list));
+                                      ^~~~
+                                      List
+list.c:33:38: note: each undeclared identifier is reported only once for each function it appears in
+list.c:33:10: error: unused variable ‘new’ [-Werror=unused-variable]
+   List * new = (List *)malloc(sizeof(list));
+          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+0a1bbfb

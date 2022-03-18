@@ -33,12 +33,12 @@ List * createList() {
   nueva->head = NULL;
   nueva->current = NULL;
   nueva->tail = NULL;
-  return List->nueva;
+  return list->nueva;
 }
 
 void * firstList(List * list) {
   list->nueva->head;
-  return list->first;
+  return list->;
 }
 
 void * nextList(List * list) {

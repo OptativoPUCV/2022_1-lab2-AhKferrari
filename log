@@ -414,3 +414,14 @@ Fri Mar 18 14:47:49 UTC 2022:
  tests:  1|5
 total_score: 10/70
 d60bc6e
+Fri Mar 18 14:49:29 UTC 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:40:7: error: statement with no effect [-Werror=unused-value]
+   list->head;
+   ~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+02e2f15

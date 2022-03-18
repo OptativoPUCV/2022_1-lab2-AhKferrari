@@ -36,3 +36,9 @@ list.c:33:10: error: unused variable ‘nueva’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 5691075
+Fri Mar 18 14:33:14 UTC 2022: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+574c3b4

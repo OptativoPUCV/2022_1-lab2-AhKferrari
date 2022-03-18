@@ -525,3 +525,12 @@ Fri Mar 18 15:06:00 UTC 2022:
  tests:  9|3
 total_score: 35/70
 2815d28
+Fri Mar 18 15:10:02 UTC 2022: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+list.c:64:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘void’
+ void pushFront(List * list, void * data) {
+ ^~~~
+Compilation failed
+80ea1b2

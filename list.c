@@ -33,7 +33,7 @@ List * createList() {
   nueva->head = NULL;
   nueva->current = NULL;
   nueva->tail = NULL;
-  return List->nueva;
+  return nueva;
 }
 
 void * firstList(List * list) {

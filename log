@@ -482,3 +482,17 @@ Fri Mar 18 14:58:08 UTC 2022:
  tests:  2|5
 total_score: 15/70
 b65290b
+Fri Mar 18 15:01:56 UTC 2022: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:46:28: error: ‘List {aka struct List}’ has no member named ‘next’
+   if(!list->current || list->next) return NULL;
+                            ^~
+list.c:47:16: error: statement with no effect [-Werror=unused-value]
+   list->current->next;
+   ~~~~~~~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+63d4ba7

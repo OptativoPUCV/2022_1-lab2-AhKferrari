@@ -37,7 +37,6 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  list->head;
   list->current = list->head;
   return list->head;
 }

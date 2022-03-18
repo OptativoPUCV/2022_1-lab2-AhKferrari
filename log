@@ -442,3 +442,14 @@ list.c:40:8: error: assignment from incompatible pointer type [-Werror=incompati
 cc1: all warnings being treated as errors
 Compilation failed
 06ca744
+Fri Mar 18 14:54:08 UTC 2022: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:40:7: error: statement with no effect [-Werror=unused-value]
+   list->head;
+   ~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e1745fc

@@ -62,7 +62,7 @@ void * prevList(List * list) {
 //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
 
 void pushFront(List * list, void * data) {
-  Node * nodo = createNode (void* data);
+  Node * nodo = createNode ((void*) data);
 
   nodo->next = list->head;
   list->head = nodo;

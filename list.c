@@ -34,7 +34,7 @@ List * createList() {
   nueva->current = NULL;
   nueva->tail = NULL;
   return nueva;
-}
+} 
 
 void * firstList(List * list) {
   list->current = list->head;
@@ -62,7 +62,11 @@ void * prevList(List * list) {
 //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
 
 void pushFront(List * list, void * data) {
-}
+  Node * nodo = createNode (void* data);
+
+  nodo->next = list->head;
+  list->head = nodo;
+  }
 
 void pushBack(List * list, void * data) {
     list->current = list->tail;

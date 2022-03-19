@@ -540,3 +540,13 @@ Fri Mar 18 15:10:08 UTC 2022:
  tests:  9|3
 total_score: 35/70
 8ca42cb
+Sat Mar 19 23:47:08 UTC 2022: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:65:29: error: expected expression before ‘void’
+   Node * nodo = createNode (void* data);
+                             ^~~~
+Compilation failed
+b7129cc

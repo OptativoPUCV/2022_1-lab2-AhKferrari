@@ -102,7 +102,16 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    return NULL;
+    
+  if (!list->head) return NULL;
+  if (list->head == list->tail){
+    return list->head->data;  
+  }
+    
+  
+  
+  
+  return NULL;
 }
 
 void cleanList(List * list) {

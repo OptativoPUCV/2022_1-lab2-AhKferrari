@@ -59,7 +59,8 @@ void * prevList(List * list) {
   list->current = list->current->prev;
   return list->current->data;  
   }
-//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
+
+
 
 void pushFront(List * list, void * data) {
   Node * nodo = createNode ((void*) data);

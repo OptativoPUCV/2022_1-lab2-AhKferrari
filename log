@@ -657,3 +657,13 @@ Mon Mar 21 00:29:46 UTC 2022:
  tests:  11|1
 total_score: 55/70
 870127a
+Mon Mar 21 00:42:40 UTC 2022: 
+ list.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:124:5: error: expected ‘;’ before ‘list’
+     list->tail = list->tail->prev;
+     ^~~~
+Compilation failed
+9240d66
